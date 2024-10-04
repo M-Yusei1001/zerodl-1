@@ -63,7 +63,10 @@ def doOR()->None:
 def doXOR()->None:
     for a, b in pattern:
         print(f"[{a}, {b}] >>> {XOR(a, b)}")
-    
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 if __name__=="__main__":
     doAND()
     print("")
